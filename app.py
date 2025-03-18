@@ -7,7 +7,7 @@ saludo()
 
 while True:
     menu()
-    operaciones = input("Que operacion desea hacer: ")
+    operaciones = input("Que operacion desea hacer: ").lower().strip()
     if operaciones in ("salir", "5"):
         break
 
@@ -18,16 +18,12 @@ while True:
         print("Erro, ingrese solo numeros")
 
     if operaciones in ("suma", "sumar", "+", "1"):
-        print(" - - - - - - - - - - - - - - - - - - - -")
         print("Su resultado es: ", suma(num1, num2))
     elif operaciones in ("resta", "restar", "-", "2"):
-        print(" - - - - - - - - - - - - - - - - - - - -")
         print("Su resultado es: ", resta(num1, num2))
     elif operaciones in ("multiplicacion", "multiplicar", "*", "3"):
-        print(" - - - - - - - - - - - - - - - - - - - -")
         print("Su resultado es: ", multiplicacion(num1, num2))
     elif operaciones in ("division", "dividir", "/", "4"):
-        print(" - - - - - - - - - - - - - - - - - - - -")
         print("Su resultado es: ", division(num1, num2))
 
 despedida()
