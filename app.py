@@ -16,6 +16,7 @@ while True:
         num2 = int(input("Ingrese su segundo numero: "))
     except ValueError:
         print("Erro, ingrese solo numeros")
+        continue
 
     if operaciones in ("suma", "sumar", "+", "1"):
         print("Su resultado es: ", suma(num1, num2))
